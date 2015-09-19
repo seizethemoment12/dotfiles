@@ -1,12 +1,18 @@
 " Vim Plugin List
-" - Nerd Tree
+"  Pathogen #plugin manager
+"  Nerd Tree #file browser
+"  Ctrlp #used to seach and open a file
+"  tcomment_vim #used for quick commenting (gc)
 
-"   Nerd Tree Settings
-"   autocmd vimenter *NERDTree
-"
 
-"  ctrlp.vim Settings
-" set runtimepath^=~/.vim/bundle/ctrlp.vim
+"Nerd Tree Settings
+   autocmd vimenter * NERDTree
+
+"Pathogen Settings
+execute pathogen#infect()
+
+"ctrlp.vim Settings
+set runtimepath^=~/.vim/bundle/ctrlp.vim
 
 "show line numbers
 set number
