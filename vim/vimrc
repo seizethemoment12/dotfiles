@@ -3,13 +3,17 @@
 "  Nerd Tree #file browser
 "  Ctrlp #used to seach and open a file
 "  tcomment_vim #used for quick commenting (gc)
-
+"  Delimitmate used to auto close ()""{} ect.
+"  TagList to show file structure
 
 "Nerd Tree Settings
-   autocmd vimenter * NERDTree
+"   autocmd vimenter * NERDTree
 
 "Pathogen Settings
 execute pathogen#infect()
+
+"Delimitmate Settings
+let delimitMate_expand_cr = 1
 
 "ctrlp.vim Settings
 set runtimepath^=~/.vim/bundle/ctrlp.vim
